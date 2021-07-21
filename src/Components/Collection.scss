@@ -1,0 +1,69 @@
+.div2{
+height: 50vh;
+display: flex;
+flex-direction: row;
+justify-content: space-evenly;
+background-color: rgba(93, 47, 131, 0.2); 
+}
+@media (max-width: 800px) {
+  .div2{
+    flex-direction: column;
+    justify-content:space-around;
+ 
+  }
+ 
+}
+
+ .item1,.item2,.item3{
+  align-self: center;
+  height: 30vh;
+  width: 20vw;
+  padding: 10px;
+  }@media (max-width:800px){
+    .item1,.item2,.item3{
+      height: 60vh;
+      width: 45vw;
+      padding-bottom: 10px;
+      margin-bottom: 10px;
+    }
+  }
+
+
+@mixin border{
+  margin-top:5%;
+  border-radius: 25px;
+  border: none;
+   background-color: rgba(5, 1, 8, 0.2);
+   box-shadow: 6px 10px  rgba(209, 81, 209, 0.1); 
+}
+
+
+.item1{
+  background-image: url("../Pictures/Kikamba.gif");
+  background-size:cover;
+  background-repeat: no-repeat;
+  @include border()
+}
+.item2{
+  background-image: url("../Pictures/wikijs.gif");
+  background-size: cover;
+  background-repeat: no-repeat;
+
+@include border()
+  
+}
+
+.item3{
+   background-image: url("../Pictures/weather.gif");
+  background-size: cover;
+  background-repeat: no-repeat;
+
+@include border()
+  
+
+}
+
+h1{
+  position: absolute;
+  
+}

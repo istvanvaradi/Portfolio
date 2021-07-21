@@ -1,0 +1,38 @@
+body{
+    margin: 0;
+    color: aliceblue;
+    overflow-x: hidden;
+     background:linear-gradient(to left,#1a202c,#1a202c);
+ 
+   
+}
+
+
+.hero{
+    position: relative;
+    height: 90vh;
+    width: 100vw;
+    background-color: rgba(5, 5, 5, 0.2);
+   
+}
+
+
+.hero h1{
+position: relative;
+top: 20vh;
+margin-left: 15%;
+line-height: 3rem;
+letter-spacing: 3px;
+font-size: 2rem;
+align-items: center;
+
+}
+
+.img-fluid{
+    width: 50%;
+    z-index: 1;
+    position: absolute;
+    float: right;
+   bottom: 0;
+   margin-left: 50%; 
+}
